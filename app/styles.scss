@@ -1,0 +1,58 @@
+.content {
+  display: flex;
+  flex-flow: row wrap;
+
+  > * {
+    padding: 10px;
+  }
+}
+.sidebar {
+  flex: 1 0 15%;
+}
+
+.main {
+  flex: 1 0 70%;
+  display: flex;
+  flex-flow: column nowrap;
+
+  .search {
+    margin: 10px 0;
+    text-align: center;
+
+    .searchInput {
+      margin-right: 10px;
+    }
+  }
+
+  .no-tweets {
+    padding: 10px;
+    text-align: center;
+    color: gray;
+  }
+
+  .tweet {
+    padding: 10px;
+    margin: 15px 0;
+
+    .tweet-header {
+      display: flex;
+      flex-flow: row nowrap;
+
+      p {
+        margin-left: 10px;
+        font-weight: bold;
+      }
+    }
+
+    .tweet-text {
+      margin-left: 50px;
+      margin-top: 0;
+    }
+
+  }
+}
+
+
+h3 {
+  text-align: center;
+}
