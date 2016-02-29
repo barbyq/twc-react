@@ -4,7 +4,7 @@ import request from 'superagent';
 class TweetApi {
   getTweets(callback) {
     request
-      .get('/tweets.json')
+      .get('http://localhost:3000/tweets')
       .end(callback)
   }
 
